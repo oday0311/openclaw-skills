@@ -1,0 +1,17 @@
+# 抖音视频文字提取工作流依赖
+
+# 核心依赖
+requests>=2.28.0
+
+# 视频处理相关
+yt-dlp>=2023.11.16
+
+# 音频处理相关
+# ffmpeg需要系统安装，这里列出Python包装器
+ffmpeg-python>=0.2.0
+
+# JSON处理
+python-json-logger>=2.0.0
+
+# Whisper相关（可选，通过openai-whisper技能安装）
+# openai-whisper>=20231117

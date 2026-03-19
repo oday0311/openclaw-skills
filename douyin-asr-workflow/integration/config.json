@@ -1,0 +1,30 @@
+{
+  "enabled": true,
+  "auto_trigger": true,
+  "require_confirmation": false,
+  "max_duration": 300,
+  "allowed_users": [],
+  "excluded_users": [],
+  "model": "base",
+  "timeout": 300,
+  "temp_dir": "/tmp/douyin_workflow",
+  "log_level": "INFO",
+  "notifications": {
+    "start": "🎬 检测到抖音链接，正在启动文字提取工作流...",
+    "processing": "⏳ 处理中，请稍候...",
+    "success": "✅ 文字提取完成！",
+    "error": "❌ 处理失败，请稍后重试。"
+  },
+  "limits": {
+    "max_video_size_mb": 100,
+    "max_daily_requests": 50,
+    "max_concurrent": 3
+  },
+  "output": {
+    "format": "markdown",
+    "include_video_info": true,
+    "include_transcription": true,
+    "include_stats": true,
+    "truncate_length": 1000
+  }
+}
